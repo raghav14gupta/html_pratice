@@ -131,5 +131,28 @@ type bhi change kr sakte hai(both ol and ul ka)
     </ol>
    
 </ul>
+
+
+******************************
+//features of html5 over prevous versions
+1.semantic tags -these are basically self explanatory tags(inke naam se hi pta lagjata hai ye kis kaam me use aaenge)
+  like nav tag for navbar,p tag for paragraph etc
+
+2.media tags - we can use audio and video tag now 
+3.drag and drop
+4.canvas
+5.geological  locations
+
+*************
+//part of a webpage
+1.header
+2.navbar
+3.main
+  3.1 sections
+4 footer
+5 aside
+
+//jaise hum content(main) ko sections me divide kr dete hai vaise hi <div>tag bhot famous tha vo 
+  bhi as a container ki trah humlog use krte they but ye old tag hai not a semantic tag 
   
 
