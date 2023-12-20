@@ -47,3 +47,89 @@ element = <tag> content to display </tag>  //pure complete ko element bolte hai
 
 
      </html>
+
+     //************************************************************
+
+***************     //attributes************************************
+
+     //basically ye additional information provide krte hai about element
+     //jaise img me jo src & alt hote hai ye attributes hai
+     //ye image ka source hai aur agar hamari image load na hue to alt me jo text hai vo show hoga
+
+     same 
+
+     anchor tag me href hota hai attribute
+     
+     < anchor tag hyperlink banane ke kaam ata hai jis se hum apne content pe/image/logo anything pe hyperlink bana sakte hai
+     (hyperlink banane ka faida ye hai ki hum kisi dusri site ka url apni personal site me add karva sakte hai aur user hamari site se hi directly us site pe visit kr sakta hai)
+     <a href="https://www.google.com" target="_blank">Open Example Website</a>
+     
+     open example(content name) ka hyperlink banjaga  jaise hi ispe click karenge ye humko google ki site pe lejaega(jo url pass hoga)
+    
+     <a href="#">Click me</a>
+  note -- agar humko current page pe hi rhna hai to href = #(hash) ;krdo(ye krne se hyperlink pe click krne se bhi (koe action perform ni hoga)hum dusri site pe move ni honge(current apne page pe hi rhenge))
+  agar new url pe jana hai to uska link pass krdo like google.com
+
+  (target attribute hi btata hai ki humko jo hyperlink pass hua hai usko new (TAB) me open krna hai ki ni)
+  _self: Opens the linked document in the same window/tab (default behavior).
+_blank: Opens the linked document in a new, unnamed window/tab.
+
+like---jb hum open example(content name) pe click karenge
+agar url pass  hai href me 
+to ye humko jis site ka url pass hai uspe move karvaega
+
+ab us new site ko same tab me hi open karvana hai ya new tab me ye kaam target ka hai
+
+
+ 
+
+important*****************************
+difference with # and target attribute of anchor tag
+
+href =# --- ye btata hai ki humko kisi new url(hyperlink to someother site like google) pe move ni krna apne site pe hi rhna hai
+target = blank/self --ye btata hai agr hum kiisi dusre url pe move kr re hai apne current page se new page(like google site pe) to 
+        //humko vo new site new tab pe open krvani hai ya same tab pe hi open karvani hai
+        (target attribute hi btata hai ki humko jo hyperlink pass hua hai usko new (TAB) me open krna hai ki ni)
+  _self: Opens the linked document in the same window/tab (default behavior).
+_blank: Opens the linked document in a new, unnamed window/tab.
+
+**************************************
+***************************************8
+*******************************************
+
+//list in html
+2 types of list are there
+1.ordered list(ol)  ex -- jb list humko number,abcd,roman etc is form me banani ho
+2.unordered list(ul)ex-- jb list bullet,cirecle.square is type pe banani ho
+
+<ul>                                      
+  <li>Red</li>  // o(by default bullets hote hai) red
+  <li>Green</li>  //o green
+  <li>Blue</li>
+</ul>
+
+<ol>
+  <li>Red</li>      //1(by default number hote hai) red                   
+  <li>Green</li>    //2 green
+  <li>Blue</li>
+</ul>
+
+
+type bhi change kr sakte hai(both ol and ul ka)
+<ol type="A"(number,abcd,roman kuch type bhi de sakte h)>
+  <li>First item</li>
+</ol>
+
+<*****nesting bhi possible hai sono list ke beech mix krke bhi use kr sakte hai
+
+<ul>
+  <li>Fruits</li>
+
+    <ol>
+      <li>Seedless Oranges</li>
+      <li>Valencia Oranges</li>
+    </ol>
+   
+</ul>
+  
+
