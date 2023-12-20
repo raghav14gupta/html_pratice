@@ -1,0 +1,49 @@
+//html-hypertext markup language
+//it is not a programming language it is a markup language
+//markup language means that use tags and elements in it  eample- html,xml,xhtml
+//hypertext = interlinking of pages with each other(like we click on a page we can move to anothr section of a page )
+//HTML provides the basic (static)structure and layout for a website, allowing browsers to interpret and display the content correctly.
+//html is not case sensitive
+
+
+
+//8888888888888888888888888888888888888888888888888888888888
+
+//tag and elements
+//tag basically kuch keywords hote hai jo baatate hai website me kis type ka content hai
+like-<p> is a tag   aur hum is tag ko dekh kr bta sakte hai ki isme paragraph store hoga website ke ander.
+
+
+element = <tag> content to display </tag>  //pure complete ko element bolte hai
+//tag is a part of element
+// element is collection of opening tag + content + closing tag
+
+
+//*************************************************************
+
+//structure of html
+
+<!DOCTYPE html>  // it represnt document type of latest version of html
+
+<html>  //ye root element hota hai iske ander 2 child element hote hai
+
+1.     <head>
+     head ke ander aisa content dete hai jo hum directly user ko show ni krna chate
+     like jaise hum <style>  tag use krte hai to use css but ye tag visible ni hota hamari user display me bcz
+     iski  need ni user ko likewise script tag use krte hai hum to link our javascript with htmml 
+     vo bhi output screeen me display ni krvate bcz need hi ni user ko btate ki ki humne konsi
+     library use ki konsi property use ki konsa function banaya ye user ko janne me koe interet ni
+     usko bus final output se mtlab hai
+
+     </head>
+      
+2.    <body>
+    body me aisa content hota hai jo directly user ko display hota hai
+    like paragraph banaya jo hum dekh sakte hai screen pee
+    heading di image lagai 
+    ye sb final screen pe dikhte h user ko
+    
+     </body>
+
+
+     </html>
