@@ -139,6 +139,12 @@ type bhi change kr sakte hai(both ol and ul ka)
   like nav tag for navbar,p tag for paragraph etc
 
 2.media tags - we can use audio and video tag now 
+ex
+<audio controls>  //control ek attribute hai ye must hai use krna isi se user pause/play kr paega
+  <source src="soundfile.mp3" type="audio/mpeg">//yaha source path of audio ko alag se tag banake dala hai  ,,isko directly src deke audio tag me bhi use kr ssakte h
+  Your browser does not support the audio element.
+</audio>
+
 3.drag and drop
 4.canvas
 5.geological  locations
@@ -155,4 +161,83 @@ type bhi change kr sakte hai(both ol and ul ka)
 //jaise hum content(main) ko sections me divide kr dete hai vaise hi <div>tag bhot famous tha vo 
   bhi as a container ki trah humlog use krte they but ye old tag hai not a semantic tag 
   
+*********************************************************************************************************
+forms
+*****
+form basically hum banate hai user ki personal details lene ke liye
 
+<label for="fname">Name*:</label> <br>
+ <input type="text" name="fname" id="fname" value="Suman"  placeholder="enter your name" >
+
+ //label ko hum as a wrapper use krte hai ye hamare inputbox jaha user detail enter krte hai uske adjacent attach hota hai label
+ //for attribute hai label ka jo btata hai label me kis type ka data h like label for = name (is se pta lagega ander name enter krna h input box me(jo hum input tag ki help se banate h))
+ //label static rhta hai iske ander hum modification ni kr sakte na koe text likh sakte hai ek bar banne k baad
+
+ //input tag se inputbox create hota hai jaha user apni details enter kr sakta hai
+ // type attribute hai jo dhyan rakhta hai kis type ka data store karna hai like - number,text,email,phone number etc
+//input tag bhot useful hai iski help se bhot type ki cheze banjati hai --radio button checkbox,,dob,etc
+
+ //placeholder --ye inputbox ke ander pre hint type ka text show krta hai like "enter your name"
+ is se user ko pta chlta hai ki input box me apna naam daalna hai 
+ ye modificable hota hai jaise hi user ekbhi character likh deta hai ye gayab hojata h
+
+ ***important
+ input tag me name and value attribute use krna important hai must
+ bcz ye dono key value pair ke form me jate h backend me jis se serverside backend me help milti hai data fetch krne me aur organise krne m
+
+ //value attribute basically bydefault value set krdeta hai hamare inputbox me jo hum dete h initially jb page load hoga to vo value user ko show hoti h
+ //ye easily modificable value hoti h user isko change kr sakta h
+ //agar user koe value add ni krta to intial bydefault entered value hi backend srver me chli jati hai
+
+ fname = "suman" aise jata h backend me
+ (data inside name attribute) = (value attribute ke ander ka data tht user )
+ (key hoti hai) = (value) pair
+
+ ye dono jb form submit hojata hai tb kaam aate h
+ _________
+ When the form containing this input is submitted, the server uses the name attribute to identify the data associated with this input. 
+ It's essential for server-side processing and scripting languages like PHP, Python, etc., to recognize and process the data entered.
+
+value: The value attribute sets the initial or default value for an input field. For example, in a text input, it specifies the text that appears initially in the field before the user changes it.
+ When the form is submitted, the value of the value attribute is sent to the server as part of the form data unless the user modifies it before submission.
+
+In summary, name labels the input data for server-side processing, while value defines the default or initial content displayed in the input field.
+*****************************
+*******************************
+ek aur important baat
+
+<label for="fname">Name*:</label> <br>
+ <input type="text" name="fname" id="fname" value="Suman"  placeholder="enter your name" >
+
+ //label tag me for attribute ki value
+ // aur inpput tag me name and id attribute likhna bhi compulsory krdia gya hai aur ye teeeno ki value hamesha same hi deni hai
+ //teeno me  same data hi entered hoga like uoer eg me fname hai  sbme
+ //value attribute me koe bhi value ho sakti h 
+
+ ***reason
+ faida ye hai ye label tag aur input tag ke beech ek link bana deta hai jis se relationship banjati hai dono k beech
+ backend me bhi help milti hai iski vaja se
+ hum itte sare html page pe se particular element ko target kr sakte hai bcz id unique hoti hai 
+
+  using the same value for the for attribute in a <label> and the id attribute in an <input> tag creates a link between the label and the input field, 
+    making it so that when you click on the label, it activates or focuses on the associated input, making it more accessible and user-friendly.
+    *****************************************************************************
+
+  important 
+
+  radio box single option select krne ke kaam aate hai
+  checkbox multiple option tick krne ke kaam aate hai
+
+  but humko ek cheez ka dhyaan dena hai radiobox banate time verna multiple value tick ho sakti h
+   <label for="gender">Gender:</label> <br>
+            <input type="radio" value="male" name="gender"> Male <br>
+            <input type="radio" value="female" name="gender"> Female
+
+ hamesha name attrbute same ki value same honi chaiyey jitte bhi option dene ko humko like male,female,other for gender
+    //value alag alg de sakte hai sare option me  like male  female, other
+
+ aisa isiliye krte h bcz last me sirf ek final value hi server ko send ho jb form submit ho user sirf ek ki value ko tick kr sakta ha
+   When using radio buttons within a form and giving them the same name attribute value, it means they are part of the same group of choices. Only one radio button within that group can be selected at a time.
+
+When the form is submitted to the server, the value of the selected radio button with that common name attribute is sent. This allows server-side scripts to identify which option was chosen by the user among the radio button group. 
+If no radio button in the group is selected, nothing is sent for that particular name attribute.
