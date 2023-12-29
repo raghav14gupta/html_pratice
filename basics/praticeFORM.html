@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!--form creation-->
+    <h1>vendor form</h1>
+    <form method="post">
+        <!--adding name-->
+    <div>
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" value=""
+    placeholder="enter first name">
+    <input type="text" id="name" name="name" placeholder="enter sir name">
+</div>
+<br>
+<!--adding date of birth-->
+    <div>
+        <label for="dob">date of birth</label>
+        <input type="date" id="dob" name="dob" value="">
+    </div>
+<br>
+<!--adding locaTION-->
+    <div>
+        <label for="location">current location</label><br>
+        <textarea>text area</textarea>
+    </div>
+<br>
+<!--adding email-->
+    <div>
+        <label for="emails">email</label><br>
+        <input type="email" id="emails" name="emails" value="example@.com">
+    </div>
+<br>
+<!--adding adhaar-->
+    <div>
+        <label for="aadhar">upload your aadhar card</label><br>
+        <input type="file" id="aadhar" name="aadhar" value="">
+    </div>
+    <br>
+    <!--pancard with validation-->
+    <div>
+        <label for="pan">pan card with validation</label><br>
+        <input type="tel" pattern="[A-Za-z]{5}\d{4}[A-Za-z]{1}">"
+
+    </div>
+    <br>
+    <div>
+        <!--drop down menu banane ke liye select tag with option tag use hota hai-->
+        <label for="items">items to sell</label>
+        <select id="items" name="items">
+            <option value="pen">pen</option>
+            <option value="chair">chair</option>
+            <option value="shoes">shoes</option>
+            <option value="cloth">cloth</option>
+            <option value="book">book</option>
+        </select>
+        
+    </div>
+<!--radio button-->
+    <div>
+        <br>
+        <label for="india">are you from india?</label>
+        <label for="yes">yes</label>
+        <input type="radio" name="india" value="yes">
+        <label for="no">no</label>
+        <input type="radio" name="india" value="no">
+    </div>
+    <br>
+    <!--checkbox-->
+<div>
+    <label for="delivery">location for delivery</label>
+    <label for="city1">delhi</label>
+    <input type="checkbox" name="city1" value="delhi">
+    <label for="lucknow">lucknow</label>
+    <input type="checkbox" name="lucknow" value="lucknow">
+    <label for="kanpur">kanpur</label>
+    <input type="checkbox" name="kanpur" value="lucknow">
+    <label for="noida">noida</label>
+    <input type="checkbox" name="noida" value="lucknow">
+</div>
+    <div>
+        <br>
+        <!-- Submit Button -->
+  <input type="submit" value="Submit">
+
+  <!-- Reset Button -->
+  <input type="reset" value="Reset">
+    </div>
+
+</form>
+</body>
+</html>

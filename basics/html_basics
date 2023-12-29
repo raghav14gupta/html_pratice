@@ -272,7 +272,9 @@ search: Input for search fields.
 tel: Input for telephone numbers.
 url: Input for web URLs.
 Numeric Inputs:
-
+****difference between tel vs number
+The key difference lies in The tel attribute is specifically for entering phone numbers and might allow characters like "+", "-", or spaces. 
+On the other hand, the number attribute is for general numeric inputs, restricting input to numbers only (excluding characters like letters or special symbols other than numbers and and (float values) decimal point).
 number: Input for numeric values.
 range: Input for selecting a value from within a specified range.
 Date and Time Inputs:
@@ -308,7 +310,7 @@ list and datalist: Associates an input with a list of predefined options.
 autofocus: Automatically focuses on the input when the page loads.
 required: Specifies that the input must be filled out before submitting the form.
 pattern: Defines a regex pattern for input validation.
-ye bhot imp hai 
+ye bhot imp hai isse hum validation dal sakte h like adharcard me fix digit hoti h us se jyada enter ni hogi like sirf number honge
 
 <!-- Custom pattern for a username (alphanumeric, 3-10 characters) -->
 <input type="text" pattern="[A-Za-z0-9]{3,10}"> // ye regular expression pass hota h isme 
@@ -327,3 +329,19 @@ accept: Specifies allowed file types for file inputs.
 form: Associates an input with a specific form.
 size: Defines the visible width in characters.(width btata h inputbox ki ye number of character fix ni hote input box ki width me jitte character ajaye utte enter ho sakte h)
 id: Uniquely identifies the input.
+
+
+********************************************************************************************************
+**********************8
+block vs inline element
+***important
+Block Elements:
+Layout: They start on a new line and occupy the full width available.
+Structure: They create a structural unit, often used for larger sections like paragraphs, headings, divs, etc.
+Attributes: They typically accept width, height, margin, padding, and can have margins and padding applied on all sides.
+Examples: <div>, <p>, <h1>-<h6>, <ul>, <li>, <section>, <footer>, <header>, <article>, etc.
+Inline Elements:
+Layout: They don’t start on a new line and occupy only the width necessary for their content.
+Structure: They don't form a structural unit; rather, they are part of the flow inside block-level elements or other inline elements.
+Attributes: They often accept only a few attributes like width, height, margin, and padding might not affect them horizontally.
+Examples: <span>, <a>, <strong>, <em>, <img>, <input>, <button>, <label>, etc.
