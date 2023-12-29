@@ -246,3 +246,84 @@ ek aur important baat
 
 When the form is submitted to the server, the value of the selected radio button with that common name attribute is sent. This allows server-side scripts to identify which option was chosen by the user among the radio button group. 
 If no radio button in the group is selected, nothing is sent for that particular name attribute.
+//note - ye feauture sirf radiobutton ke liye hi dia h html ne
+agar checkbox me same name denge tb bhi hum multiple option select kr sakte h....
+
+*******************************************************************************************
+form validation
+***********
+ye basically kuch restrictions lagane k kaam aate h
+like phone number 10 digit ka hoga
+like only female participate krengi form me
+email me @ .com hona compulsory h
+is type ke checkpoints lagate j
+
+//ye sb input tag ke attributes hai
+
+type: Defines the input's data type (e.g., text, number, email).
+Here's a list of various types that can be specified using the type attribute within the <input> tag:
+ye sb type attribute ke ander likh sakte hai
+Textual Inputs:
+
+text: Single-line text input.
+password: Input where the characters are masked for password entry.
+email: Input for email addresses.
+search: Input for search fields.
+tel: Input for telephone numbers.
+url: Input for web URLs.
+Numeric Inputs:
+
+number: Input for numeric values.
+range: Input for selecting a value from within a specified range.
+Date and Time Inputs:
+
+date: Input for dates (year, month, day).
+time: Input for times (hours and minutes).
+datetime: Input for a specific date and time.
+datetime-local: Input for a local date and time (without timezone).
+month: Input for month and year.
+week: Input for week numbers.
+File Inputs:
+
+file: Input for file uploads.
+Checkbox and Radio Buttons:
+
+checkbox: Checkbox input for multiple selections.
+radio: Radio button input for single selections.
+Other Inputs:
+
+button: A clickable button (not for form submission).
+reset: Resets the form to its initial values.
+submit: Submits the form.
+
+******************************** end of type attribute
+************************
+ye aage ke input tag ke attributes
+
+name: Identifies the input when the form is submitted.
+value: Sets the initial value for the input.
+placeholder: Provides a hint or example text within the input field.
+autocomplete: Controls browser autofill behavior for the input.
+list and datalist: Associates an input with a list of predefined options.
+autofocus: Automatically focuses on the input when the page loads.
+required: Specifies that the input must be filled out before submitting the form.
+pattern: Defines a regex pattern for input validation.
+ye bhot imp hai 
+
+<!-- Custom pattern for a username (alphanumeric, 3-10 characters) -->
+<input type="text" pattern="[A-Za-z0-9]{3,10}"> // ye regular expression pass hota h isme 
+
+This allows usernames containing only alphanumeric characters (letters and numbers) 
+and ensures the length is between 3 and 10 characters. //restriction laga diye agr user inse alag cheez enter karega to error popup hoga
+*******************
+
+min and max: Sets minimum and maximum values for numeric inputs.(ye number ke liye use krte h like age,,range of something)
+minlength and maxlength: Specifies text length constraints.(text ke liye hota h like (pass,name,email)
+step: Sets the increment for number inputs.
+readonly: Makes the input read-only.
+disabled: Disables the input field.
+multiple: Allows multiple selections (for file inputs).
+accept: Specifies allowed file types for file inputs.
+form: Associates an input with a specific form.
+size: Defines the visible width in characters.(width btata h inputbox ki ye number of character fix ni hote input box ki width me jitte character ajaye utte enter ho sakte h)
+id: Uniquely identifies the input.
