@@ -345,3 +345,52 @@ Layout: They don’t start on a new line and occupy only the width necessary for
 Structure: They don't form a structural unit; rather, they are part of the flow inside block-level elements or other inline elements.
 Attributes: They often accept only a few attributes like width, height, margin, and padding might not affect them horizontally.
 Examples: <span>, <a>, <strong>, <em>, <img>, <input>, <button>, <label>, etc.
+
+  *********************************************************************************88
+  //tables in html
+  //table html ke body tag ke ander create hoti hai
+  hamesha <table> tag use hoga table banne ke liye
+   
+  3 cheez hoti hai table ke structure me(semantic)   
+  1.<thead>
+       1.1 iske ander<th> tag ata hai ye basically table ki heading banane k kaam aate hai
+        generally table ki first complete row ko heading mana jaaata hai
+        note---<th> jaruri ni hamesha sirf thead me hi use hoga
+          //jaha table me text bold(font) me hoga vo <th> se banega bcz heading bold se hoti hai to th tag se hi banegi
+        <thead>
+        <tr>  // row baanai uske ander 4 column they yaani 4 headings banengi
+            <th>name</th> //heading 
+            <th>roll number</th>
+            <th>college</th>
+            <th>course</th>
+        </tr>
+        
+    </thead>
+   
+   2- <tbody>
+    isme baaki remaining cheez aati hai
+      2.1-<tr> - table row
+        2.2- <td> ye column btata hai table data bolte hai
+          table me <tc> table column naam ki cheez ni hoti uski jaga table data likhte h
+
+            <tbody>
+        <tr>//row
+            <td>ram</td>  //column
+            <td>12</td>
+            <td>bbd</td>
+            <td>btech</td>
+        </tr>
+            </tbody>
+            
+    3-<tfoot> --footer hota h        
+
+
+      //tables me different different attributes present hote hai
+      //like border -jisse border ajata h 
+      //cellspacing - ek table me bhot sare cell hote hai hum between the cells space de sakte hai/reduce bhi kr sakte hai
+      //cellpading -- ek cell ke ander jo content hota hai usme spacing add karva sakte hai
+                       bydefault 4 direction se padding space add hoti hai content ke around
+                       (top,down,right,left)
+
+     //rowspan - is se hum rows ko aapas me combine krdete hai(expand hojati hai row) single row me jitta size doge utte column cover krlegi vo row
+     //colspan - is se columns expand hojate hai 
